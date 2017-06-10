@@ -1,0 +1,91 @@
+---
+layout:     post
+title:      Interview questions at some company
+date:       2017-06-10GMT+8 09:47:00
+summary:    Interview questions
+categories: [algorithms]
+---
+
+I was invited to solve Hackerrank For Work coding challenges. There were 2 questions. 
+
+1. Given a txt file find the number of occurences of a website url. Easy peasy.
+
+2. $$x*y=\text{multiple of 4}$$. $$x$$ is given from STDIN and the answer is to find $$y$$ and do $$z = 2(a) + b$$. Where $$a$$ is the number of occurences of 4 and $$b$$ is $$0$$. Multiple of 4 must be in the format $$4440000$$ or $$40$$ or $$440$$. $$404$$ is wrong though. So you see 4 must come consecutively. But be sure to get it ***very*** fast.
+
+**STDIN**<br>
+The first input 3 means 3 numbers to check.<br>
+The line follows are the number to check.<br>
+
+3<br>
+4<br>
+5<br>
+80<br>
+
+**STDOUT**<br>
+2<br>
+3<br>
+4<br>
+
+
+**STDIN**<br>
+5<br>
+62<br>
+67<br>
+20<br>
+63<br>
+81<br>
+
+**STDOUT**<br>
+30<br>
+66<br>
+3<br>
+36<br>
+162<br>
+
+
+
+I didn't manage to get it on time though because of a few hiccups in my brain(hehe) and not understanding some part of the question 1 - due to confusing input instruction.
+
+But ofcourse given extra hours on my own after submission to Hackerrank I managed to find the optimal solution to question 2!
+(I did send my initial answer to them but that was too slow.)
+
+Here's the most optimal solution I found. What'dya think? Did you get the same set of questions as I did?
+
+
+
+```python
+def checking(num):
+    counter = 1
+    while True:
+        four = list("".join(str(e) for e in ['0' for x in range(counter)]))
+
+        for x in range(1, counter + 1):
+            print(x, counter)
+            if x == 1:
+                four[x - 1] = '4'
+            else:
+                four[: x] = ['4' for _ in range(x)]
+
+            four_int = int("".join(four))
+
+            if four_int % num == 0:
+                count_0 = four.count('0')
+                count_4 = four.count('4')
+
+                return count_4, count_0
+
+        counter += 1
+
+
+N = int(input())
+
+for x in range(N):
+    num = int(input())
+    a, b = checking(num)
+    if a is None or b is None:
+        print('Invalid')
+    else:
+        z = (2*a) + b
+        print(z)
+```
+
