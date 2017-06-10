@@ -49,8 +49,12 @@ I didn't manage to get it on time though because of a few hiccups in my brain(he
 But ofcourse given extra hours on my own after submission to Hackerrank I managed to find the optimal solution to question 2!
 (I did send my initial answer to them but that was too slow.)
 
-Here's the most optimal solution I found. What'dya think? Did you get the same set of questions as I did?
 
+Anyway, this is about the solution I found which is actually quite tricky at first if mistakes were not found earlier.
+
+
+Here's the most optimal solution.
+The reason that makes it faster than looping through 0 until infinity while checking if it's a multiple of 4 by calculation is that the code predetermined the value of four - 4, 40, 400, 440, 444, 4000, 4400, 4440, 4444 etc and just checking the modulus of it from there. 
 
 
 ```python
