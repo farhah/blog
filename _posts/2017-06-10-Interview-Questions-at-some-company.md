@@ -1,8 +1,7 @@
 ---
 layout:     post
-title:      Interview questions at some company
+title:      Multiple of four
 date:       2017-06-10GMT+8 09:47:00
-summary:    Interview questions
 categories: [algorithms]
 ---
 **Note: It seems this particular page is indexed and ranked 1 in google with keyword hackerrank some-company. It's unethical to search for solutions before you actually take the test. My blog is mainly about algorithms and it wasn't my intention to help you scored 100% correct in hackerrank. It was purely my interest in algorithm that got me writing about it.** 
@@ -10,8 +9,7 @@ categories: [algorithms]
 *Damaged is done therefore I'm just gonna leave this post as it is with some keywords removed. I hope they can come out with other questions.*
 
 
-
-I was invited to solve Hackerrank For Work coding challenges. There were 2 questions. 
+There were 2 questions. 
 
 1. Given a txt file find the number of occurences of a website url. Easy peasy.
 
@@ -46,16 +44,6 @@ The line follows are the number to check.<br>
 3<br>
 36<br>
 162<br>
-
-
-
-I didn't manage to get it on time though because of a few hiccups in my brain(hehe) and not understanding some part of the question 1 - due to confusing input instruction.
-
-But ofcourse given extra hours on my own after submission to Hackerrank I managed to find the optimal solution to question 2!
-(I did send my initial answer to them but that was too slow.)
-
-
-Anyway, this is about the solution I found which is actually quite tricky at first if mistakes were not found earlier.
 
 
 Here's the most optimal solution.
