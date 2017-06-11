@@ -4,7 +4,7 @@ title:      Multiple of four
 date:       2017-06-10GMT+8 09:47:00
 categories: [algorithms]
 ---
-**Note: It seems this particular page is indexed and ranked 1 in google with keyword hackerrank some-company. It's unethical to search for solutions before you actually take the test. My blog is mainly about algorithms and it wasn't my intention to help you scored 100% correct in hackerrank. It was purely my interest in algorithm that got me writing about it.** 
+**Note: It seems this particular page is indexed and ranked 1 in google with keyword some-interview-platofrm some-company. It's unethical to search for solutions before you actually take the test. My blog is mainly about algorithms and it wasn't my intention to help you scored 100% correct. It was purely my interest in algorithm that got me writing about it.** 
 
 *Damaged is done therefore I'm just gonna leave this post as it is with some keywords removed. I hope they can come out with other questions.*
 
